@@ -1,0 +1,61 @@
+html{
+    font-size: 62.5%;         /*16px* 62.5%= 10px= 1 rem*/
+    box-sizing: border-box;
+}
+
+body{
+    font: 1.6rem Helvetica;
+    height: 100vh; 
+    margin: 0;            /* by default browser has margin, therefore set to 0*/
+} 
+
+/* 2nd step is to create a grid container */
+
+.grid-container{
+    display: grid;            /*new style of displaying the grig*/
+    grid-template-areas:      /*having three main areas*/
+    "header"
+    "main"
+    "footer";
+    /* 4th/ time to set grid area columns and group*/
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%; 
+}
+
+/* 3rd/ create classes for header, main, footer*/
+.header{
+    grid-area: header;
+    background-color: rgb(23, 43, 72);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(17, 26, 26);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand a{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.header-links a{
+    color: white;
+    text-decoration: none;
+}
+/**ON Hovering**/
+.header-links a:hover{
+    color: orange;
+}
