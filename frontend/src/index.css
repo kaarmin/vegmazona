@@ -1,0 +1,166 @@
+/*Dibyarupa Jena |one author*/
+
+
+
+
+
+
+/*GENERAL BASE- 1st*/
+html{
+  font-size: 62.5%;         /*16px* 62.5%= 10px= 1 rem*/
+  box-sizing: border-box;
+}
+
+body{
+  font: 1.6rem Helvetica;
+  height: 100vh; 
+  margin: 0;            /* by default browser has margin, therefore set to 0*/
+} 
+
+
+
+
+
+/* Creating a GRID container -2nd*/
+
+.grid-container{
+  display: grid;            /*new style of displaying the grig*/
+  grid-template-areas:      /*having three main areas*/
+  "header"
+  "main"
+  "footer";
+  /*  setting grid area columns and group -4th*/
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%; 
+}
+
+
+
+
+
+/* Creating classes for header, main, footer -3rd*/
+.header{
+  grid-area: header;
+  background-color: rgb(23, 43, 72);
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+.main{
+  grid-area: main;
+}
+.footer{
+  grid-area: footer;
+  background-color: rgb(17, 26, 26);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand a{
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.header-links a{
+  color: white;
+  text-decoration: none;
+}
+/* ON Hovering -5th */
+.header-links a:hover{
+  color: orange;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: orange;
+}
+
+
+
+
+
+
+/* HOME SCREEN - product, image, price, ratings etc -7th*/
+.products{
+ display: flex;          /* need to display products next to eachother, flex*/
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;         /*iF yOu REmovE thiS StYlE THEn A beAutiful HoRizonTal wRap unIQue Will be CReated*/ 
+}
+.products li{               /* for each item of the product*/
+  list-style-type: none;
+  padding: 0;
+  flex: 0 1 34rem;
+  margin: 1rem;
+  height: 40rem;
+  border-bottom: .1rem #c0c0c0 solid;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.product-name{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.product-brand{
+  font-size: 1.2rem;
+  color: #808080;
+}
+.product-price{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.product-image{
+  max-width: 34rem;
+  max-height: 34rem;
+}
+.product-rating{
+  margin-bottom: 1rem;
+}
+
+
+
+/* SIDEBAR SECTION- hamburger, categories etc -8th*/
+
+.brand button{
+  font-size: 3rem;
+  padding: .5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.sidebar{
+  position: fixed;
+  transition: all 0.5s;
+  transform: translateX(-30rem);
+  width: 30rem;
+  background-color: #f0f0f0;
+  height: 100%;
+}
+.sidebar.open{
+  transform: translateX(0);
+}
+.sidebar-close-button{
+  border-radius: 50%;
+  border: .1rem #000000 solid;
+  width: 3rem;
+  height: 3rem;
+  padding: .5rem;
+  font-size: 2rem;
+  padding-top: 0;
+  cursor: pointer;
+  position: absolute;
+  right: .5rem;
+  top: 1.5rem;
+}
