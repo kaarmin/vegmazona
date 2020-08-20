@@ -30,8 +30,8 @@ Dibyarupa Jena  <dibyarupajena@gmail.com>
 
 4. Grid area column and group set in style sheet
 
-5. Effects styled to links on hovering:
-    -header links, cart and signin added
+5. Effects styled to links on hovering
+    - header links, cart and signin added
 
 
 6. Homescreen created
@@ -72,10 +72,23 @@ Dibyarupa Jena  <dibyarupajena@gmail.com>
     - data.js is created and imported in app.js
     - Object containing objects of producted created
 
-10. Product details 
+10. Two screens created
 
     - react-router-dom installed : 
     
     - ```cd frontend ```
     
     - ```npm install react-router-dom  ```
+
+    - <BrowserRouter> start and end tags are closed across the divs  of app.js
+    - ```<Routhe path="/" component={HomeScreen} />``` inside content class of main class of app.js, also 
+    done for product screen. This means path "/" or "/products/:id" refer to component HomeScreen or ProductScreen.
+    - Inside src, created folder Screens, inside which created HomeScreen.js with a function 
+    homescreen(props) taking parameter, returning text HomeScreen. export default homescreen(why?). Same done for productScreen.js ...
+    - Import both files to app.js 
+    - also import ``` import {BrowserRouter, Routhe} from 'react-router-dom';``` in app.js
+    - the ul component of product is cut pasted into homescreen.js and import as done
+
+11. Linking done
+    - Instead of <a href> tags search directs through changed url id on click
+    - ```  <Link to={'/product/' + product._id}> ``` - for eg- localhost3000/product/2472    
