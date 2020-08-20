@@ -48,7 +48,7 @@ mn and group set in style sheet
     - script tags added at the end
 
 
-8. Created react app and shifted files:
+8. Created react app and shifted files
 
     -to create app of the name "frontend" from terminal:
     ``` npx create-react-app frontend ```
@@ -63,6 +63,7 @@ mn and group set in style sheet
 
     - images copied to created images folder in public folder
 
+    -<img src="./public/images/8th.png">
 
 9. Products rendered
 

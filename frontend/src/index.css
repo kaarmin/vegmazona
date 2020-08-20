@@ -81,8 +81,9 @@ a{
 a:hover{
   color: orange;
 }
-
-
+.header-links{
+  padding: 1rem;
+}
 
 
 
