@@ -1,18 +1,18 @@
 
 # Vegmazona #
-Web based project inspired to provide e-kirana platform for vendors.
+Web based project inspired to provide e-kirana platform for vendors using react and node.js
 
 
 
 
 ## Contributors ##
 
-Dibyarupa Jena <dibyarupajena@gmail.com>
+Dibyarupa Jena  <dibyarupajena@gmail.com>
 
 
 ### Documentation ###
 
-1. Created a index.html of three areas
+1. Created an index.html of three areas
 
     - Header
     - Main
@@ -28,8 +28,7 @@ Dibyarupa Jena <dibyarupajena@gmail.com>
 3. Classes for header, main, footer created and styled
 
 
-4. Grid area colu
-mn and group set in style sheet
+4. Grid area column and group set in style sheet
 
 5. Effects styled to links on hovering:
     -header links, cart and signin added
@@ -50,12 +49,12 @@ mn and group set in style sheet
 
 8. Created react app and shifted files
 
-    -to create app of the name "frontend" from terminal:
-    ``` npx create-react-app frontend ```
+    - to create app of the name "frontend" from terminal:
+    - ``` npx create-react-app frontend ```
     
-    ```cd frontend```(Inside created react app)
+    - ```cd frontend``` (Inside created react app)
 
-    ```npm start```(will open the app in default browser)
+    - ```npm start``` (will open the app in default browser)
 
     - all html(from index.html inbetween the body tags) is copied to app.js inside src folder
 
@@ -77,6 +76,6 @@ mn and group set in style sheet
 
     - react-router-dom installed : 
     
-    ```cd frontend ```
+    - ```cd frontend ```
     
-    ```npm install react-router-dom  ```
+    - ```npm install react-router-dom  ```
