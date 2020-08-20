@@ -1,4 +1,4 @@
-#README
+
 
 Web based project inspired to provide e-kirana platform for vendors.
 
