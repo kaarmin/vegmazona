@@ -1,11 +1,13 @@
-##README
+**README**
 
 Web based project inspired to provide e-kirana platform for vendors.
 
-Contributors
+**Contributors**-
+
 Dibyarupa Jena <dibyarupajena@gmail.com>
 
-##License & copyrights
-Dibyarupa Jena, Silicon Institute of Tech.
+**License & copyrights**-
+
+*Dibyarupa Jena, Silicon Institute of Tech.*
 
 
