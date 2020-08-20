@@ -63,7 +63,8 @@ mn and group set in style sheet
 
     - images copied to created images folder in public folder
 
-    -<img src="./public/images/8th.png">
+
+
 
 9. Products rendered
 
