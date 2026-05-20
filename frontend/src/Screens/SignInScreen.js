@@ -29,6 +29,8 @@ function SignInScreen(props) {
     }
   };
 
+  const redirectUrl = new URLSearchParams(props.location?.search).get('redirect') || '/';
+
   const submitHandler = (event) => {
     event.preventDefault();
     setError('');
@@ -58,7 +60,7 @@ function SignInScreen(props) {
       saveUsers(updated);
       setSuccess('Account created and signed in.');
       if (props.onSignIn) props.onSignIn({ name: newUser.name });
-      if (props.history && props.history.push) props.history.push('/');
+      if (props.history && props.history.push) props.history.push(redirectUrl);
       return;
     }
 
@@ -75,7 +77,7 @@ function SignInScreen(props) {
 
     // success
     if (props.onSignIn) props.onSignIn({ name: found.name });
-    if (props.history && props.history.push) props.history.push('/');
+    if (props.history && props.history.push) props.history.push(redirectUrl);
   };
 
   const toggleMode = () => {

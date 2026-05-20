@@ -1,8 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function CartScreen({ cartItems, updateQty, removeFromCart }) {
+function CartScreen({ cartItems, updateQty, removeFromCart, history }) {
   const totalPrice = cartItems.reduce((sum, item) => sum + item.price * item.qty, 0);
+
+  const handleProceed = () => {
+    if (history && history.push) {
+      history.push('/checkout');
+    }
+  };
 
   return (
     <div className="cart-page">
@@ -59,7 +65,9 @@ function CartScreen({ cartItems, updateQty, removeFromCart }) {
                 <span>Total</span>
                 <strong>Rs. {totalPrice}</strong>
               </div>
-              <button className="primary-button summary-button">Proceed to checkout</button>
+              <button className="primary-button summary-button" onClick={handleProceed}>
+                Proceed to checkout
+              </button>
             </div>
           </aside>
         </div>
